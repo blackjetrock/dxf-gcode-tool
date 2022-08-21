@@ -21,3 +21,22 @@ For example:
 CUTZ=0.0:-0.5:-2.4
 
 Will generate gcode that cuts the 2D profile starting at Z=0.0, then moving Z by -0.5 until it reaches -2.4.
+
+============================
+dxfgcode <file> <args>
+
+   e.g. dxfgcode xyz.dxf CUTZ=-1.0 SAFEZ=5.0
+   e.g. dxfgcode xyz.dxf CUTZ=-1.0:-1.0:-3.0 SAFEZ=5.0
+
+   Layers called hidden or HIDDEN are ignored
+   Layers called height_xxx are cut at height xxx
+
+   optimisation is off, turn on with OPTIMISE=1
+
+   Window truncation
+   When specified, the output can be truncated so it lies within a range of Y co-ords
+
+   e.g.
+   dxfgcode.tcl test_dxf.dxf OPTIMISE=0 WINDOW_MIN_Y=60 WINDOW_MAX_Y=80 WINDOW_ON=1 SAFEZ=40
+
+   NOTE:Currently only supports Y truncation (horizontal strips of output.
