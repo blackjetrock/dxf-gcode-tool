@@ -9,7 +9,7 @@ Arcs
 Circles
 Points
 
-It will only work with a 2D DXf file that is then machined as a set of 2D layers, so works for engraving or cutting sheets of material.
+It will only work with a 2D DXF file that is then machined as a set of 2D layers, so works for engraving or cutting sheets of material.
 
 I use it to convert LibreCAD DXf files into .gcode files that I run on chilipeppr. It generates very simple GCODE so may work with other tools.
 You may be able to use it.
